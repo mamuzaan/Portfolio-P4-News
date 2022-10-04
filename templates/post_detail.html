@@ -5,11 +5,15 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 pdetail-text">
-                <h1 class="post-title"></h1>
-                <p class="post-subtitle"> | </p>
+                <h1 class="post-title">{{ post.title }}</h1>
+                <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 pdetail-image">
-                
+                {% if "placeholder" in post.featured_image.url %}
+                <img src="#" width="100%">
+                {% else %}
+                <img src="post.featured_image.url" width="100%">
+                {% endif %}
             </div>
         </div>
     </div>
