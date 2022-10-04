@@ -3,12 +3,11 @@ body {
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #d5e5ee;
 }
 
 .card {
     border: none;
-    background-color: transparent;
 }
 
 .image-container {
@@ -30,7 +29,7 @@ body {
 }
 
 .navbar {
-    background-color: #484848;
+    background-color: #535e67;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -47,7 +46,7 @@ body {
 
 footer a.text-light:hover {
     color: #fed136!important;
-    text-decoration: none;
+    
 }
 
 footer .cizgi {
