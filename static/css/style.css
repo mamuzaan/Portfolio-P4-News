@@ -79,6 +79,27 @@ body {
     color: #fbc531;
 }
 
+.post-link {
+    text-decoration: none;
+    color: #445261;
+}
+
+.post-link:hover,
+.page-link {
+    color: #E84610;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.post-subtitle {
+    margin-left: 5%;
+    color: lightgray;
+}
+
+
 footer a.text-light:hover {
     color: #fed136!important;
     
