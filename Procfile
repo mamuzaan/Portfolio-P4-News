@@ -1,0 +1,1 @@
+web: gunicorn anushilon2022.wsgi
