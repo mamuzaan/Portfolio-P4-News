@@ -5,15 +5,15 @@
     <div class="container">
         <div class="row">
             <!-- Blog Entries Column -->
-            <div class="col-12 mt-3 left">
+            <div class="col-12 mt-3">
                 <div class="row">
                 {% for post in post_list %}
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card shadow mb-4">
                             <div class="card-body">
                                 <div class="image-container">
                                     {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top" src="#">
+                                    <img class="card-img-top" src="">
                                     {% else %}
                                     <img class="card-img-top" src="{{ post.featured_image.url }}">
                                     {% endif %}
