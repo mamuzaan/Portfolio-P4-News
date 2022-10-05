@@ -69,7 +69,17 @@
             </div>
             <div class="col-md-4 card mb-4  mt-3 ">
                 <div class="card-body">
-                   
+                   {% if user.is_authenticated %}
+
+                   <h2>Leave a comment:</h2>
+                   <p>Posting as: {{ user.username }}</p>
+                   <form method="post" style="margin-top: 1.2em;">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
+                    <button class="btn btn-signup btn-lg btn-success">Submit</button>
+                   </form>
+
+                   {% endif %}
                 </div>
             </div>
     </div>
