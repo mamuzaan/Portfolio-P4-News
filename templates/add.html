@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+{% block content %}
+<div class="container pt-5">
+    <form method="POST">
+        {% csrf_token %}
+    </form>
+</div>
+
+{% endblock content %}
