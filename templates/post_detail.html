@@ -29,6 +29,21 @@
                 <p class="card-text"> {{ post.content | safe }}</p>
                 <div class="row">
                     <div class="col-1">
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </button>
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </button>
+                                {% endif %}
+                            </form>
+                        </strong>
                         <strong class="text-secondary"><i class="far fa-thumbs-up"></i> {{ post.number_of_likes }} </strong>
                     </div>
                     <div class="col-1">
