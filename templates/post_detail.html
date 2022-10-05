@@ -12,7 +12,7 @@
             </div>
             <div class="d-none d-md-block col-md-6 pdetail-image">
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="#" width="100%">
+                <img src="" width="100%">
                 {% else %}
                 <img src="{{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -68,26 +68,28 @@
                 <!-- Our for loop ends here -->
                 {% endfor %}
             </div>
-            <div class="col-md-4 card mb-4  mt-3 ">
-                <div class="card-body">
-                    {% if commented %}
-                    <div class="alert alert-success" role="alert">
-                        Your comment is awaiting approval
-                    </div>
-                    {% else %}
-                   {% if user.is_authenticated %}
-
-                   <h2>Leave a comment:</h2>
-                   <p>Posting as: {{ user.username }}</p>
-                   <form method="post" style="margin-top: 1.3em;">
-                        {{ comment_form | crispy }}
-                        {% csrf_token %}
-                    <button class="btn btn-signup btn-lg btn-success">Submit</button>
-                   </form>
-                   {% endif %}
-                   {% endif %}
+        </div>
+        <div class="col-md-4 card mb-4  mt-3 ">
+            <div class="card-body">
+                <!-- For later -->
+                {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting approval
                 </div>
+                {% else %}
+                {% if user.is_authenticated %}
+
+                <h3>Leave a comment:</h3>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-success btn-lg">Submit</button>
+                </form>
+                {% endif %}
+                {% endif %}
             </div>
         </div>
     </div>
+</div>
 {% endblock content %}
