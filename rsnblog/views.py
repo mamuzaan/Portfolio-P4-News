@@ -78,6 +78,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+# CRUD functionality 
 class AddView(generic.CreateView):
     model = Post
     template_name = 'add.html'
@@ -99,4 +100,17 @@ class Delete(generic.DeleteView):
     fields = '__all__'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy('home')
-    
+
+
+# Category
+class CatListView(generic.ListView):
+    template_name = 'category.html'
+    context_object_name = 'catlist'
+
+    def get_queryset(self):
+        content = {
+            'cat': self.kwargs['category'],
+            'posts': Post.objects.filter(category_name = self.kwargs['category']).filter(status='published')
+        }
+        return content
+        
