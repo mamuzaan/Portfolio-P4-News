@@ -83,4 +83,11 @@ class AddView(generic.CreateView):
     template_name = 'add.html'
     fields = '__all__'
     success_url = reverse_lazy('home')
+
+
+class EditView(generic.UpdateView):
+    model = Post
+    template_name = 'edit.html'
+    fields = '__all__'
+    success_url = reverse_lazy('home')
     
