@@ -30,6 +30,7 @@
                                 <hr />
                                 {% if user.is_authenticated %}
                                 <a href="{% url 'edit' post.pk %}" class="btn btn-primary mt-2">Edit</a>
+                                <a href="{% url 'delete' post.pk %}" class="btn btn-danger mt-2">Delete</a>
                                 {% endif %}
                             </div>
                         </div>
