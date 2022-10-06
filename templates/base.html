@@ -36,15 +36,9 @@
                                 <a class="nav-link" href="#">Category</a>
                             </li>
                             {% if user.is_authenticated %}
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Manage Post
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="{% url 'add' %}">Create Post</a>
-                                  
-                                </div>
-                              </li>
+                            <li class="nav-item pl-1">
+                                <a class="nav-link" href="{% url 'add' %}">Create Post</a>
+                            </li>
                             <li class="nav-item pl-1">
                                 <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                             </li>

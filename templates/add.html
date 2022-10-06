@@ -2,13 +2,14 @@
 {% load widget_tweaks %}
 
 {% block content %}
-<div class="container pt-5">
-    <form method="POST">
+<div class="container offset-md-1 p-5">
+    <form method="POST" class="p-5">
+        <strong><h1 class="text-center">Create Post</h1></strong>
         {% csrf_token %}
         {% for field in form.visible_fields %}
         <div class="form-group">
             <label for="{{ field.id_for_label }}">{{ field.label }}</label>
-            {{ field | add_class: 'form-control'}}
+            {{ field|add_class:'form-control' }}
 
             {% for error in field.errors %}
             <span class="help-block">{{ error }}</span>
@@ -17,10 +18,10 @@
         {% endfor %}
 
         <div class="form-group">
-            <button type="submit" class="btn btn-success">
-                <span class="glyphicon glyphicon-ok"></span>Create
+            <button type="submit" class="btn btn-success mt-2">
+                <span class="glyphicon glyphicon-ok"></span>Add Post
             </button>
-            <a href="{% url 'home' %}" class="btn btn-default">Cancel</a>
+            <a href="{% url 'home' %}" class="btn btn-danger mt-2">Cancel</a>
         </div>
     </form>
 </div>
