@@ -89,5 +89,5 @@ class EditView(generic.UpdateView):
     model = Post
     template_name = 'edit.html'
     fields = '__all__'
+    pk_url_kwarg = 'pk'
     success_url = reverse_lazy('home')
-    
