@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-5">
+                <h1>list of {{ catlist.cat }} posts</h1>
+            </div>
+            {% for post in catlist.posts %}
+            <div class="col-md-4">
+                <a class="text-dark" href="{{ post.get_absolut_url }}">
+                    <div class="card mb-4 box-shadow">
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
