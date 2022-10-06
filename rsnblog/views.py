@@ -91,3 +91,12 @@ class EditView(generic.UpdateView):
     fields = '__all__'
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy('home')
+
+
+class Delete(generic.DeleteView):
+    model = Post
+    template_name = 'delete.html'
+    fields = '__all__'
+    pk_url_kwarg = 'pk'
+    success_url = reverse_lazy('home')
+    
