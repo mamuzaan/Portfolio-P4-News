@@ -9,12 +9,12 @@
             </div>
             {% for post in catlist.posts %}
             <div class="col-md-4">
-                <a class="text-dark" href="{{ post.get_absolut_url }}">
+                <a class="text-light" href="{{ post.get_absolut_url }}">
                     <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="" alt="card image top">
                         <div class="card-body">
-                            <h2 style="font-size:2em; font-weight:bold;">{{ post.title|truncatechars:50 }}</h2>
-                            <p class="card-text">{{ post.excerpt|truncatechars:50 }}</p>
+                            <h2 style="font-size:2em; font-weight:bold;">{{post.title|truncatechars:50}}</h2>
+                            <p class="card-text">{{post.excerpt|truncatechars:50}}</p>
                         </div>
                     </div>
                 </a>

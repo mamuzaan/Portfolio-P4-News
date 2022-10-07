@@ -110,13 +110,13 @@ class CatListView(generic.ListView):
     def get_queryset(self):
         content = {
             'cat': self.kwargs['category'],
-            'posts': Post.objects.filter(category_name = self.kwargs['category']).filter(status='published')
+            'posts': Post.objects.filter(category_name=self.kwargs['category']).filter(status='published')
         }
         return content
 
 
 def category_list(request):
-    category_list = Category.objects.exclude(name='defailt')
+    category_list = Category.objects.exclude(name='default')
     context = {
         'category_list': category_list,
     }
