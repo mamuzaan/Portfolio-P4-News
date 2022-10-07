@@ -32,6 +32,11 @@
                             <li class="nav-item active pl-1">
                                 <a class="nav-link" href="{% url 'home' %}"><i class="fa fa-home fa-fw mr-1"></i>Home</a>
                             </li>
+                            <li class="nav-item active pl-1">
+                                {% for category in category_list %}
+                                <a class="dropdown-item" href="category/{{ category.name }}">{{ category.name|title }}</a>
+                                {% endfor %}
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Categorys

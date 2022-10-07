@@ -28,8 +28,10 @@
                                 <p class="card-text text-muted h6">{{ post.created_on }} <i class="far fa-thumbs-up"></i>{{ post.number_of_likes }}</p>
                                 <hr />
                                 {% if user.is_authenticated %}
+                                {% if user.id == post.author.id %}
                                 <a href="{% url 'edit' post.pk %}" class="btn btn-primary mt-2">Edit</a>
                                 <a href="{% url 'delete' post.pk %}" class="btn btn-danger mt-2">Delete</a>
+                                {% endif %}
                                 {% endif %}
                             </div>
                         </div>
