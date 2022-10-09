@@ -9,15 +9,33 @@
             </div>
             {% for post in catlist.posts %}
             <div class="col-md-4">
-                <a class="text-light" href="{{ post.get_absolut_url }}">
-                    <div class="card mb-4 box-shadow">
-                        <img class="card-img-top" src="" alt="card image top">
-                        <div class="card-body">
-                            <h2 style="font-size:2em; font-weight:bold;">{{post.title|truncatechars:50}}</h2>
-                            <p class="card-text">{{post.excerpt|truncatechars:50}}</p>
+                <div class="card shadow mb-4">
+                    <div class="card-body">
+                        <div class="image-container">
+                            {% if "placeholder" in post.featured_image.url %}
+                            <img class="card-img-top" src="">
+                            {% else %}
+                            <img class="card-img-top" src="{{ post.featured_image.url }}" alt="">
+                            {% endif %}
+                            <div class="image-flash">
+                                <p class="author">Author: {{ post.author }}</p>
+                            </div>
                         </div>
+                        <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                            <h3 class="card-title">{{ post.title }}</h3>
+                            <p class="card-text">{{ post.excerpt }}</p>
+                        </a>
+                        <hr />
+                        <p class="card-text text-muted h6">{{ post.created_on }} <i class="far fa-thumbs-up"></i>{{ post.number_of_likes }}</p>
+                        <hr />
+                        {% if user.is_authenticated %}
+                        {% if user.id == post.author.id %}
+                        <a href="{% url 'edit' post.pk %}" class="btn btn-primary mt-2">Edit</a>
+                        <a href="{% url 'delete' post.pk %}" class="btn btn-danger mt-2">Delete</a>
+                        {% endif %}
+                        {% endif %}
                     </div>
-                </a>
+                </div>
             </div>
             {% endfor %}
         </div>

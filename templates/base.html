@@ -34,7 +34,7 @@
                             </li>
                             <li class="nav-item active pl-1">
                                 {% for category in category_list %}
-                                <a class="dropdown-item" href="category/{{ category.name }}">{{ category.name|title }}</a>
+                                <a class="dropdown-item" href="/category/{{ category.name }}">{{ category.name|title }}</a>
                                 {% endfor %}
                             </li>
                             <li class="nav-item dropdown">
@@ -43,7 +43,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     {% for category in category_list %}
-                                    <a class="dropdown-item" href="category/{{ category.name }}">{{ category.name|title }}</a>
+                                    <a class="dropdown-item" href="/category/{{ category.name }}">{{ category.name|title }}</a>
                                     {% endfor %}
                                 </div>
                               </li>
