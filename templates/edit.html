@@ -10,7 +10,7 @@
         {% for field in form.visible_fields %}
         <div class="form-group">
             <label for="{{ field.id_for_label }}">{{ field.label }}</label>
-            {{ field|safe }}
+            {{ field|add_class:'form-control'|safe }}
 
             {% for error in field.errors %}
             <span class="help-block">{{ error }}</span>

@@ -8,7 +8,7 @@
                 <div class="row">
                 {% for post in post_list %}
                     <div class="col-md-4">
-                        <div class="card shadow mb-4">
+                        <div class="card shadow post_card mb-4">
                             <div class="card-body">
                                 <div class="image-container">
                                     {% if "placeholder" in post.featured_image.url %}
@@ -24,9 +24,9 @@
                                     <h3 class="card-title">{{ post.title }}</h3>
                                     <p class="card-text">{{ post.excerpt }}</p>
                                 </a>
-                                <hr />
+                                <hr>
                                 <p class="card-text text-muted h6">{{ post.created_on }} <i class="far fa-thumbs-up"></i>{{ post.number_of_likes }}</p>
-                                <hr />
+                                <hr>
                                 {% if user.is_authenticated %}
                                 {% if user.id == post.author.id %}
                                 <a href="{% url 'edit' post.pk %}" class="btn btn-primary mt-2">Edit</a>

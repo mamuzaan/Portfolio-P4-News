@@ -12,9 +12,9 @@
             </div>
             <div class="d-none d-md-block col-md-6 pdetail-image">
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="" width="100%">
+                <img src="" alt="">
                 {% else %}
-                <img src="{{ post.featured_image.url }}" width="100%">
+                <img src="{{ post.featured_image.url }}" alt="" style="width: 100%;">
                 {% endif %}
             </div>
         </div>

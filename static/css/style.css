@@ -143,6 +143,16 @@ footer .cizgi {
     border-right: 1px solid #535e67;
 }
 
+.summernote-div iframe, .note-editor.note-airframe, .note-editor.note-frame{
+    width: 100% !important;
+}
+
+.post-card{
+    border: none;
+    height: 430px;
+    overflow-y: scroll;
+}
+
 @media (max-width: 992px) {
     footer .cizgi { border-right: none;
     }
