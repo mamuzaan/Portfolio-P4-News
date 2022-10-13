@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load widget_tweaks %}
+{% load static %}
 
 {% block content %}
 <div class="container offset-md-1 p-5">
@@ -9,7 +10,7 @@
         {% for field in form.visible_fields %}
         <div class="form-group">
             <label for="{{ field.id_for_label }}">{{ field.label }}</label>
-            {{ field|add_class:'form-control' }}
+            {{ field|safe }}
 
             {% for error in field.errors %}
             <span class="help-block">{{ error }}</span>
