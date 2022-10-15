@@ -8,13 +8,13 @@
                 <div class="row">
                 {% for post in post_list %}
                     <div class="col-md-4">
-                        <div class="card shadow post_card mb-4">
+                        <div class="card shadow post_card mb-5">
                             <div class="card-body">
                                 <div class="image-container">
                                     {% if "placeholder" in post.featured_image.url %}
-                                    <img class="card-img-top" src="">
+                                    <img class="card-img-top" src="" alt="">
                                     {% else %}
-                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="">
+                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="card image">
                                     {% endif %}
                                     <div class="image-flash">
                                         <p class="author">Author: {{ post.author }}</p>
@@ -29,8 +29,8 @@
                                 <hr>
                                 {% if user.is_authenticated %}
                                 {% if user.id == post.author.id %}
-                                <a href="{% url 'edit' post.pk %}" class="btn btn-primary mt-2">Edit</a>
-                                <a href="{% url 'delete' post.pk %}" class="btn btn-danger mt-2">Delete</a>
+                                <a href="{% url 'edit' post.pk %}" class="btn btn-primary mt-1">Edit</a>
+                                <a href="{% url 'delete' post.pk %}" class="btn btn-danger mt-1">Delete</a>
                                 {% endif %}
                                 {% endif %}
                             </div>
