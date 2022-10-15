@@ -147,13 +147,13 @@ footer .cizgi {
     width: 100% !important;
 }
 
-.post-card{
-    border: none;
-    height: 430px;
-    overflow-y: scroll;
-}
-
 @media (max-width: 992px) {
     footer .cizgi { border-right: none;
     }
+}
+
+.post_card {
+    border: none;
+    height: 430px;
+    overflow-y: scroll;
 }
