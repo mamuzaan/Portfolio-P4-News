@@ -14,7 +14,7 @@
                                     {% if "placeholder" in post.featured_image.url %}
                                     <img class="card-img-top" src="" alt="">
                                     {% else %}
-                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="card image">
+                                    <img class="card-img-top" src="{{ post.featured_image.url }}" alt="card image" style="height: 190px;">
                                     {% endif %}
                                     <div class="image-flash">
                                         <p class="author">Author: {{ post.author }}</p>
