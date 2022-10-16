@@ -12,6 +12,12 @@
 - [Wireframes](#wireframes)
 - [Agile Methodology](#Agile-Methodology)
 
+[Existing Features](#existing-features)
+- [Navbar and Footer](#Navbar-and-Footer)
+- [Home Page](#Home-page)
+- [Cloudinary API](#Cloudinary-APIs)
+- [Form Validation](#Form-Validation)
+
 ## UX 
 ------
 
@@ -32,3 +38,25 @@ I have designed both desktop and mobile wireframes in the same time but I have t
 ### Agile Methodology
 
 Github issues were used to create the User stories and acceptance criteria. Link to the project with live issues can be found [here](https://github.com/users/mamuzaan/projects/4).  
+
+## Existing Features
+--------------------
+
+### Navbar and Footer
+
+Navbar and Footer hase been copied from a part of Bootstrap components and adjusted to the needs of the project.
+
+I have used a beautiful navbar with icons found in bootstrap examples in headers. The design was quite unique and bootstrap classes have hindered the design.
+
+![Navbarimage](media/navbar.png)
+
+When user login in the web page, navbar look like so
+
+![Navbar image user login](media/navbar_user.png)
+
+Footer contains only minimal information about the author of the page. It stays at the bottom of the page. Footer look like below
+
+![Footer image](media/footer.png)
+
+
+
