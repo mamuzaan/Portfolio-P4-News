@@ -54,9 +54,27 @@ When user login in the web page, navbar look like so
 
 ![Navbar image user login](media/navbar_user.png)
 
+If user is not register user, so user vate to sign up. User have to registera with username, email(optional), and password. Sign up page look like so
+
+![signup image](media/signup.png)
+
+Whwn user log out the web page, user can see this page
+
+![log out site](media/logout.png)
+
 Footer contains only minimal information about the author of the page. It stays at the bottom of the page. Footer look like below
 
 ![Footer image](media/footer.png)
 
+### Home Page
+Home page consists of a hero with a short message of blogs with card and a little image reffering to tank
 
+User can read, create, update and delete post like CRUD if user is authenticated. home page look so
 
+![home page image](media/homepage.png)
+
+Second part of the home page is detail page of blogs. The detail page is generated dynamicly when user click in blog post and user can like post. 
+
+User can comment blog post. If site owner approve comment, user can see comments in the left side on the screen. 
+
+![comment image](media/comments.png)
