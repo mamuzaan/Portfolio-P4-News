@@ -19,8 +19,14 @@
 - [Form and code Validation](#Form--code-Validation)
 
 [Technologies Used](#technologies-used)
-+ [Languages Used](#languages-used)
-+ [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
+- [Languages Used](#languages-used)
+- [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
+- [Database](#database-structure)
+
+
+[Tests](#tests)
+- [Automated Tests](#automated-tests)
+- [Lighthouse](#Lighthouse)
 
 ## UX 
 ------
@@ -152,6 +158,20 @@ PEP8online.com site is not available at the moment. Its corrently down and thats
         Bootstrap was used to add style to the website.
     - Django
         This is python framework and used this project.
+    - Database
+        Database model schema structure added below
 
+![database model structure](media/models.png)
 
-     
+## Tests
+--------
+
+### Automated tests
+Automated tests already fixed on W3School, JShint and pycodetest(gitpod)
+
+### Lighthouse
+
+![Lighthouse general report](media/lighthouse_report.png)
+
+The Lighthouse in Chrome dev tools has been run. The results indicated very positive outcome of testing Accessibility, Best Practice and SEO, unfortunately the Best Practice has been assesed very low.
+
