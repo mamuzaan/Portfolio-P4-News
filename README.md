@@ -29,7 +29,6 @@
 
 [Deployment](#Deployment)
 - [Deployment to heroku](#Deployment-to-heroku)
-- [Forking the GitHub Respository](#forking-the-github-repository)
 - [Setting up local enviroment](#Setting-up-local-enviroment)
 
 ## UX 
@@ -246,4 +245,25 @@ Once the program runs:
 you should see the message "the app was sussesfully deployed"
 
 23. Click the button "View"
+
+### Setting up local environment
+
+1. Create Virtual enviroment on computer or use gitpod built in virtual enviroment feature.
+
+2. Create env.py file in the top directory. It needs to contain those variables.
+
+* Database URL can be obtained from [heroku](https://dashboard.heroku.com/), add PostgreSQL as an add on when creating an app. 
+* Secret_key - is the djnago secret key can be generated self.
+* Cloudinary URL can be obtained from [cloudinary](https://cloudinary.com/) follow the steps on the website to register. 
+
+```
+os.environ["DATABASE_URL"] = "..."
+os.environ["SECRET_KEY"] = "..."
+os.environ["CLOUDINARY_URL"] = "..."
+```
+
+3. Run command 
+```
+pip3 install -r requirements.txt
+```
 
