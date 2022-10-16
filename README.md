@@ -16,7 +16,11 @@
 - [Navbar and Footer](#Navbar-and-Footer)
 - [Home Page](#Home-page)
 - [Cloudinary API](#Cloudinary-APIs)
-- [Form Validation](#Form-Validation)
+- [Form and code Validation](#Form--code-Validation)
+
+[Technologies Used](#technologies-used)
++ [Languages Used](#languages-used)
++ [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
 
 ## UX 
 ------
@@ -83,7 +87,7 @@ User can comment blog post. If site owner approve comment, user can see comments
 
 This is Cloud based website. When user add post image in the blog, image store in the cloud based site in cloudinary. Thats why cloudinary API key add to the heroku apps and added code the settings file
 
-### Form Validation
+### Form o code Validation
 
 Form Validation
 1. HTML validation using HTML attribute
@@ -117,3 +121,37 @@ PEP8online.com site is not available at the moment. Its corrently down and thats
 
 ![python code validation report](media/python_validation.png)
 
+## Technologies Used
+--------------------
+
+### Language Used
+    - HTML 5
+    - CSS 3
+    - JavaScript
+    - Python
+    - Django
+
+### Technologies and Program Used
+    - GitHub
+        The Git was used for version control
+        Git issues were used for user stories
+        GitPod was used as IDE to write the code and push to GitHub
+    
+    - Heroku
+        The page was deployed to Heroku
+    - PostgreSQL
+        PostgreSQL was used as database for this project
+    - Cloudinary storage
+        Cloudinary used for storing static files
+    - Allauth
+        Allauth functionality used for page inloggning.
+
+ ### Frameworks Libraries and Programs Used
+    
+    - Bootstrap 5
+        Bootstrap was used to add style to the website.
+    - Django
+        This is python framework and used this project.
+
+
+     
