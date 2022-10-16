@@ -31,6 +31,12 @@
 - [Deployment to heroku](#Deployment-to-heroku)
 - [Setting up local enviroment](#Setting-up-local-enviroment)
 
+[Credit](#credits)
+- [Online resources](#Online-resources)
+- [Tutorials and inspiration](#Tutorials-and-inspiration)
+- [People](#People)
+
+
 ## UX 
 ------
 
@@ -267,3 +273,23 @@ os.environ["CLOUDINARY_URL"] = "..."
 pip3 install -r requirements.txt
 ```
 
+## Credits
+
+### Online resources
+
+    - [W3School](https://www.w3schools.com/)
+    - [Fontawsome](https://fontawesome.com/)
+    - [Markdown best practices](https://www.markdownguide.org/basic-syntax/)
+    - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    - [Stackoverflow](https://stackoverflow.com/)
+
+### Tutorials and inspiration
+
+- The project walkthrough I Think Therefore I Blog tutorial in this course whose provided instpiration for make this project.
+- Hello Django tutorial by Mr Zielinski. Link to repository can be found [here](https://github.com/ckz8780/ci-fsf-hello-django/tree/c13b414fd2e87a54b4f2788ceffec55be4ade925) This helped me to understand various Django errors.
+- To create projects readme video tutorial by JoGorska on slack.
+
+### People
+
+- Get mentor support on this project.
+- Get a lot of tutor support when I stop in the middle of project.
