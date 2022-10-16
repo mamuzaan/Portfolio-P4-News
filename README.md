@@ -23,10 +23,14 @@
 - [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
 - [Database](#database-structure)
 
-
 [Tests](#tests)
 - [Automated Tests](#automated-tests)
 - [Lighthouse](#Lighthouse)
+
+[Deployment](#Deployment)
+- [Deployment to heroku](#Deployment-to-heroku)
+- [Forking the GitHub Respository](#forking-the-github-repository)
+- [Setting up local enviroment](#Setting-up-local-enviroment)
 
 ## UX 
 ------
@@ -174,4 +178,72 @@ Automated tests already fixed on W3School, JShint and pycodetest(gitpod)
 ![Lighthouse general report](media/lighthouse_report.png)
 
 The Lighthouse in Chrome dev tools has been run. The results indicated very positive outcome of testing Accessibility, Best Practice and SEO, unfortunately the Best Practice has been assesed very low.
+
+## Deployment
+
+### Deployment to heroku
+
+**In the app** 
+
+1. add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
+2. Git add and git commit the changes made
+
+**Log into heroku**
+
+3. Log into [Heroku](https://dashboard.heroku.com/apps) or create a new account and log in
+
+4. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+
+5. Write app name - it has to be unique, it cannot be the same as this app
+6. Choose Region - I am in Europe
+7. Click "Create App"
+
+**The page of project opens.**
+
+8. Go to Resources Tab, Add-ons, search and add Heroku Postgres
+
+9. Choose "settings" from the menu on the top of the page
+
+10. Go to section "Config Vars" and click button "Reveal Config Vars". 
+
+11. Add the below variables to the list
+
+    * Database URL will be added automaticaly
+    * Secret_key - is the djnago secret key can be generated self 
+    * Cloudinary URL can be obtained from [cloudinary](https://cloudinary.com/) follow the steps on the website to register. 
+    * Google API key can be obtained [here](https://cloud.google.com/gcp?authuser=1)
+
+**Go back to code**
+
+12. Procfile needs to be created in your app
+```
+web: gunicorn PROJ_NAME.wsgi
+```
+
+13. In settings in your app add Heroku to ALLOWED_HOSTS
+
+14. Add and commit the changes in your code and push to github
+
+**Final step - deployment**
+
+15. Next go to "Deploy" in the menu bar on the top 
+
+16. Go to section "deployment method", choose "GitHub"
+
+17. New section will appear "Connect to GitHub" - Search for the repository to connect to
+
+18. type the name of your repository and click "search"
+
+19. once Heroku finds your repository - click "connect"
+
+20. Scroll down to the section "Mamual Deploys"
+
+21. Click choose "Deploy branch" and manually deploy
+
+22. Click "Deploy branch"
+
+Once the program runs:
+you should see the message "the app was sussesfully deployed"
+
+23. Click the button "View"
 
