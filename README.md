@@ -78,3 +78,42 @@ Second part of the home page is detail page of blogs. The detail page is generat
 User can comment blog post. If site owner approve comment, user can see comments in the left side on the screen. 
 
 ![comment image](media/comments.png)
+
+### Cloudinary API
+
+This is Cloud based website. When user add post image in the blog, image store in the cloud based site in cloudinary. Thats why cloudinary API key add to the heroku apps and added code the settings file
+
+### Form Validation
+
+Form Validation
+1. HTML validation using HTML attribute
+2. CSS Validation
+3. Javascript validation
+4. Django form validation
+
+**1. HTML Validation**
+Some inline css shows fail but it was fixed problem W3C validation. Screenshot report shows below
+
+![W3C HTML validation report](media/html_validation.png)
+
+**2. CSS Validation**
+CSS file was tested by W3C css validation and everything was well. Screenshot report shows below
+
+![W3C CSS validation report](media/w3c_css.png)
+
+**3. Javascript Validation**
+This file was tested by jshint.com and everything was well.
+
+**4. Django code validation**
+PEP8online.com site is not available at the moment. Its corrently down and thats why I use pycodestyle in gitpod workspace. In the django framework, python code validation complated by gitpod workspace. It shows problem at starting like "line is too long" but now it fixed.
+    - settings.py
+    - urls.py
+    - admin.py
+    - forms.py
+    - models.py
+    - views.py
+    - env.py
+    - manage.py and more
+
+![python code validation report](media/python_validation.png)
+
