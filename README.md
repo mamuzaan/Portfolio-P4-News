@@ -54,6 +54,15 @@ GitHub issues were used to record the user stories. The user stories were catego
 
 I have designed both desktop and mobile wireframes in the same time but I have taken mobile first approach. This app look good and work well on both desktop and mobile device.
 
+##### Mobile and Desktop device
+![wireframe mobile and desktop device](media/Wireframe_mobile_&_desktop_view.png)
+
+##### Detail page
+![Wireframe detail page](media/Wireframe_Details_view.png)
+
+##### User register view
+![Wireframe user register view](media/Wireframe_user_register_view.png)
+
 ### Agile Methodology
 
 Github issues were used to create the User stories and acceptance criteria. Link to the project with live issues can be found [here](https://github.com/users/mamuzaan/projects/4).  
