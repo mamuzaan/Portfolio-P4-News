@@ -52,7 +52,7 @@ GitHub issues were used to record the user stories. The user stories were catego
 
 ### Wireframes
 
-I have designed both desktop and mobile wireframes in the same time but I have taken mobile first approach. This app look good and work well on both desktop and mobile device.
+I have designed both desktop and mobile wireframes in the same time in figma.com but I have taken mobile first approach. This app look good and work well on both desktop and mobile device.
 
 ##### Mobile and Desktop device
 ![wireframe mobile and desktop device](media/Wireframe_mobile_&_desktop_view.png)
@@ -134,14 +134,24 @@ This file was tested by jshint.com and everything was well.
 
 **4. Django code validation**
 PEP8online.com site is not available at the moment. Its corrently down and thats why I use pycodestyle in gitpod workspace. In the django framework, python code validation complated by gitpod workspace. It shows problem at starting like "line is too long" but now it fixed.
+- anushilon2022
+    - __init__.py
+    - asgi.py
     - settings.py
     - urls.py
+    - wsgi.py
+
+- rsnblog
+    - __init__.py
     - admin.py
+    - apps.py
     - forms.py
     - models.py
+    - tests.py
+    - urls.py
     - views.py
     - env.py
-    - manage.py and more
+    - manage.py
 
 ![python code validation report](media/python_validation.png)
 
