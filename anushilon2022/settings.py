@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['anushilon2022.herokuapp.com', 'localhost']
 
@@ -119,22 +119,24 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
+VALUE1 = 'django.contrib.auth.'
+VALUE1 = f"{VALUE1}password_validation.UserAttributeSimilarityValidator"
+VALUE2 = 'django.contrib.auth.password_validation.MinimumLengthValidator'
+VALUE3 = 'django.contrib.auth.password_validation.CommonPasswordValidator'
+VALUE4 = 'django.contrib.auth.password_validation.NumericPasswordValidator'
+
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.\
-            UserAttributeSimilarityValidator',
+        'NAME': VALUE1,
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.\
-            MinimumLengthValidator',
+        'NAME': VALUE2,
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.\
-            CommonPasswordValidator',
+        'NAME': VALUE3,
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.\
-            NumericPasswordValidator',
+        'NAME': VALUE4,
     },
 ]
 
