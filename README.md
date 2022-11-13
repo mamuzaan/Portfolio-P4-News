@@ -74,6 +74,10 @@ I have designed both desktop and mobile wireframes in the same time in figma.com
 
 ![Wireframe user register view](media/Wireframe_user_register_view.png)
 
+##### User register view
+
+![Wireframe user create post](media/Wireframe-add-post.png)
+
 ### Agile Methodology
 
 Github issues were used to create the User stories and acceptance criteria. Link to the project with live issues can be found [here](https://github.com/users/mamuzaan/projects/4).  
