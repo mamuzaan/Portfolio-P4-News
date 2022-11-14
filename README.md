@@ -137,10 +137,18 @@ Form Validation
 3. Javascript validation
 4. Django form validation
 
-**1. HTML Validation**
-Some inline css shows fail but it was fixed problem W3C validation. Screenshot report shows below
+## 1. HTML Validation
 
-![W3C HTML validation report](media/html_validation.png)
+![HTML Validation](https://validator.w3.org/nu/#textarea)
+| File Name | Result |
+| ------ | ------ |
+| base.html | ![no error](README/home.txt) |
+| index.html | ![no error](README/home.txt) |
+| post_detail.html | ![error found auto generated](README/Post_details.txt) |
+| add.html | ![error found auto generated](README/add.txt) |
+| edit.html | ![error found auto generated](README/Edit.txt) |
+| delete.html | ![no error](README/Delete.txt) |
+| category.html | ![no error]() |
 
 **2. CSS Validation**
 CSS file was tested by W3C css validation and everything was well. Screenshot report shows below
