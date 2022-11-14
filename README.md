@@ -74,7 +74,7 @@ I have designed both desktop and mobile wireframes in the same time in figma.com
 
 ![Wireframe user register view](media/Wireframe_user_register_view.png)
 
-##### User register view
+##### User create post view
 
 ![Wireframe user create post](media/Wireframe-add-post.png)
 
@@ -149,6 +149,7 @@ CSS file was tested by W3C css validation and everything was well. Screenshot re
 
 **3. Javascript Validation**
 This file was tested by jshint.com and everything was well.
+![jshint validstion report](media/jshint.png)
 
 **4. Django code validation**
 PEP8online.com site is not available at the moment. Its corrently down and thats why I use pycodestyle in gitpod workspace. In the django framework, python code validation complated by gitpod workspace. It shows problem at starting like "line is too long" but now it fixed.
