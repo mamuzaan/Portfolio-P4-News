@@ -26,7 +26,7 @@
 
 - [Languages Used](#language-used)
 - [Frameworks, Libraries & Programs Used](#frameworks-libraries-and-programs-used)
-- [Database](#database model structure)
+- [Database](#database-model-structure)
 
 [Tests](#tests)
 
@@ -223,6 +223,8 @@ PEP8online.com site is not available at the moment. Its corrently down and thats
         This is python framework and used this project.
     - Database
         Database model schema structure added below
+
+### Database Model Structure
 
 ![database model structure](media/models.png)
 
