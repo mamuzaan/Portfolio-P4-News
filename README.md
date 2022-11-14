@@ -162,15 +162,15 @@ This file was tested by jshint.com and everything was well.
 **4. Django code validation**
 PEP8online.com site is not available at the moment. Its corrently down and thats why I use pycodestyle in gitpod workspace. In the django framework, python code validation complated by gitpod workspace. It shows problem at starting like "line is too long" but now it fixed.
 
+- No error found in gitpod workspace
 - anushilon2022
-  - **init**.py
   - asgi.py
   - settings.py
   - urls.py
   - wsgi.py
 
+- No error found in gitpod workspace
 - rsnblog
-  - **init**.py
   - admin.py
   - apps.py
   - forms.py
@@ -180,6 +180,10 @@ PEP8online.com site is not available at the moment. Its corrently down and thats
   - views.py
   - env.py
   - manage.py
+
+- Procfile
+- readme.md
+- requirements.txt
 
 ![python code validation report](media/python_validation.png)
 
