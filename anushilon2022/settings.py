@@ -29,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['anushilon2022.herokuapp.com', 'localhost']
 
@@ -181,4 +181,8 @@ SUMMERNOTE_CONFIG = {
         'width': '100%',
         'height': '500'
     },
+}
+
+CLOUDINARY_STARAGE = {
+    'CLOUDINARY_URL': 'cloudinary://573366951141391:ZgmzqbTZdwruDLSwHZSt1XaI5_Y@dyk9oykhi'
 }
